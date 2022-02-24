@@ -10,8 +10,11 @@ case "$1" in
 	create)
 		echo "Creating template chapter structure"
 
-		mkdir -p "$(pwd)/$2/images"
-		touch "$(pwd)/$2/exercises.md" "$(pwd)/$2/README.md"
+		create_path="$(pwd)/${2}"
+		mkdir -p "${create_path}/images"
+		touch "${create_path}/exercises.md" "${create_path}/README.md"
+
+		echo "# Exercises" > "${create_path}/exercises.md"
 	;;
 
 	*)
