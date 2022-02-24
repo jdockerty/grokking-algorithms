@@ -33,7 +33,7 @@ Here, you would use a linked list. There is no requirement for random access and
 
 This would require an array. The fact binary search requires random access is also the giveaway here too. Also, considering there are lots of searches occurring, we don't want to use a linked list, since we would have to continually traverse the elements in linear time, which would not be very efficient.
 
-**2.4 **
+**2.4**
 
     People sign up for Facebook pretty often, too. 
     
